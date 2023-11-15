@@ -22,8 +22,6 @@ If you got any suggestions on how to improve the mod, check out the link below:
 https://discord.gg/WGx6xZj
 (it also gets updates quicker here than they appear on a website)
 
-- Sapphire
-
 Changelog:
 
 v1.5.1 (12.07.2023)
