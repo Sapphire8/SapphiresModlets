@@ -5,9 +5,14 @@ Please leave your feedback, more interested in volume of the items or steps. Mor
 Leave feedback here: https://discord.gg/WGx6xZj
 
 Credits:
+
 Sapphire (me! :D)
+
 The Fun Pimps - base game
+
 Battlestate Games - sounds
+
+----------------
 
 Changelog:
 
