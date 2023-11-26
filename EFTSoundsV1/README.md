@@ -1,6 +1,9 @@
 A sound mod that replaces/adds more sounds to the game from Escape from Tarkov.
+
 Please leave your feedback, more interested in volume of the items or steps. More updates and/or fixes may come out at some point.
+
 Leave feedback here: https://discord.gg/WGx6xZj
+
 Credits:
 Sapphire (me! :D)
 The Fun Pimps - base game
