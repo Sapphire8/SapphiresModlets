@@ -1,0 +1,349 @@
+<Sap>
+
+	<!--player start-->
+<remove xpath="/Sounds/SoundDataNode[@name='player_death_stinger']/AudioClip[contains(@ClipName, 'player_death_stinger')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player_death_stinger']">
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?deathstinger"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='player1death']/AudioClip[contains(@ClipName, 'player1death')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player1death']">
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death1"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death2"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death3"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death4"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death5"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death6"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death7"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death8"/>
+  <AudioClip ClipName="#@modfolder:Resources/player.unity3d?death9"/>
+</append>
+
+	<!--player end-->
+
+    <!--comsumable start-->
+
+<remove xpath="/Sounds/SoundDataNode[@name='player_bandage']/AudioClip[contains(@ClipName, 'player_bandage')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player_bandage']">
+  <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?bandage"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='player_firstaidkit']/AudioClip[contains(@ClipName, 'player_firstaidkit')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player_firstaidkit']">
+  <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?firstaid"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='player_painkillers']/AudioClip[contains(@ClipName, 'player_painkillers')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player_painkillers']">
+  <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?painkiller"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='player_drinking']/AudioClip[contains(@ClipName, 'player_drinking')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='player_drinking']">
+  <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?waterdrink"/>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="splint">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?splint"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="mineraldrink">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?mineraldrink"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="injector">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?injector"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="honeydrink">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?honeydrink"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="genericeat">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?genericeat"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="canneddrink">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?canneddrink"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="breadeat">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?breadeat"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+  <SoundDataNode name="cannedeat">
+    <AudioSource name="Sounds/AudioSource_Interact"/>
+    <Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+    <AudioClip ClipName="#@modfolder:Resources/consumables.unity3d?cannedeat"/>
+    <LocalCrouchVolumeScale value="0.5"/>
+    <CrouchNoiseScale value="0.5"/>
+    <NoiseScale value="1"/>
+    <MaxVoices value="10"/>
+    <MaxRepeatRate value="0.01"/>
+  </SoundDataNode>
+</append>
+
+    <!--consumable end-->
+	
+	<!--steps start-->
+	
+<remove xpath="/Sounds/SoundDataNode[@name='stepstone']/AudioClip[contains(@ClipName, 'StepStone')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='stepstone']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone6"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone7"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone8"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone9"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone10"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone11"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone12"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone13"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone14"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone15"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?stone16"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='stepdirt']/AudioClip[contains(@ClipName, 'stepdirt')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='stepdirt']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt6"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt7"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?dirt8"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='PlayerLandThump']/AudioClip[contains(@ClipName, 'land1')]"/>
+
+<append xpath="/Sounds/SoundDataNode[@name='PlayerLandThump']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?land1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?land2"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='stepgrass']/AudioClip[contains(@ClipName, 'stepgrass')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='stepgrass']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass6"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass7"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass8"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='steptallgrass']/AudioClip[contains(@ClipName, 'steptallgrass')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='steptallgrass']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass6"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass7"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?grass8"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='stepmetal']/AudioClip[contains(@ClipName, 'stepmetal')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='stepmetal']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?metal6"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='steptrash']/AudioClip[contains(@ClipName, 'steptrash')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='steptrash']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?garbage6"/>
+</append>
+	
+<remove xpath="/Sounds/SoundDataNode[@name='stepwood']/AudioClip[contains(@ClipName, 'stepwood')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='stepwood']">
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood1"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood2"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood3"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood4"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood5"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood6"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood7"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood8"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood9"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood10"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood11"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood12"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood13"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood14"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood15"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood16"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood17"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood18"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood19"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood20"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood21"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood22"/>
+  <AudioClip ClipName="#@modfolder:Resources/steps.unity3d?wood23"/>
+</append>
+	
+	<!--steps end-->
+	
+	<!--ui start-->
+	
+<remove xpath="/Sounds/SoundDataNode[@name='open_inventory']/AudioClip[contains(@ClipName, 'open_inventory')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='open_inventory']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?invopen"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='close_inventory']/AudioClip[contains(@ClipName, 'close_inventory')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='close_inventory']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?invclose"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='ui_trader_purchase']/AudioClip[contains(@ClipName, 'ui_trader_purchase')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='ui_trader_purchase']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?trade"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='party_invite_receive']/AudioClip[contains(@ClipName, 'party_invite_receive')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='party_invite_receive']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?partyinvreceive"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='party_join']/AudioClip[contains(@ClipName, 'party_join')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='party_join']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?partyjoin"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='weapon_jam']/AudioClip[contains(@ClipName, 'weapon_jam')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='weapon_jam']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?wepjam"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='quest_started']/AudioClip[contains(@ClipName, 'quest_started')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='quest_started']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?quest_start"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='quest_objective_complete']/AudioClip[contains(@ClipName, 'quest_objective_complete')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='quest_objective_complete']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?quest_subtask_comp"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='quest_subtask_complete']/AudioClip[contains(@ClipName, 'quest_subtask_complete')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='quest_subtask_complete']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?quest_comp"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='quest_failed']/AudioClip[contains(@ClipName, 'quest_failed')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='quest_failed']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?quest_failed"/>
+</append>
+
+<remove xpath="/Sounds/SoundDataNode[@name='password_fail']/AudioClip[contains(@ClipName, 'password_fail')]" />
+
+<append xpath="/Sounds/SoundDataNode[@name='password_fail']">
+  <AudioClip ClipName="#@modfolder:Resources/ui.unity3d?password_fail"/>
+</append>
+	
+	<!--ui end-->
+
+</Sap>

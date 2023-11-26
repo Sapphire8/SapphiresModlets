@@ -1,0 +1,86 @@
+<Sap>
+
+<set xpath="/items/item[@name='foodHoney']/property[@class='Action0']/property[@name='Sound_start']/@value">honeydrink</set>
+<set xpath="/items/item[@name='foodCanBeef']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodCornOnTheCob']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCornBread']/property[@class='Action0']/property[@name='Sound_start']/@value">breadeat</set>
+<set xpath="/items/item[@name='foodShamSandwich']/property[@class='Action0']/property[@name='Sound_start']/@value">breadeat</set>
+<set xpath="/items/item[@name='foodCharredMeat']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodGrilledMeat']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodBoiledMeat']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodMeatStew']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodSteakAndPotato']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodHoboStew']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodFishTacos']/property[@class='Action0']/property[@name='Sound_start']/@value">breadeat</set>
+<set xpath="/items/item[@name='foodBakedPotato']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodBlueberryPie']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodPumpkinPie']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodPumpkinBread']/property[@class='Action0']/property[@name='Sound_start']/@value">breadeat</set>
+<set xpath="/items/item[@name='foodGumboStew']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodShepardsPie']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodSpaghetti']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodTunaFishGravyToast']/property[@class='Action0']/property[@name='Sound_start']/@value">breadeat</set>
+<set xpath="/items/item[@name='foodEggBoiled']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodBaconAndEggs']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodVegetableStew']/property[@class='Action0']/property[@name='Sound_start']/@value">cannedeat</set>
+<set xpath="/items/item[@name='foodRawMeat']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodRottingFlesh']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodEgg']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCornMeal']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropBlueberries']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropCorn']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropGraceCorn']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropPotato']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropMushrooms']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropYuccaFruit']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+<set xpath="/items/item[@name='foodCropPumpkin']/property[@class='Action0']/property[@name='Sound_start']/@value">genericeat</set>
+
+<set xpath="/items/item[@name='medicalSplint']/property[@class='Action0']/property[@name='Sound_start']/@value">splint</set>
+<set xpath="/items/item[@name='medicalSplint']/property[@class='Action1']/property[@name='Sound_start']/@value">splint</set>
+<set xpath="/items/item[@name='medicalPlasterCast']/property[@class='Action0']/property[@name='Sound_start']/@value">splint</set>
+<set xpath="/items/item[@name='medicalPlasterCast']/property[@class='Action1']/property[@name='Sound_start']/@value">splint</set>
+
+<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@class='Action0']/property[@name='Sound_start']/@value">mineraldrink</set>
+
+
+<remove xpath="//item[@name='drinkCanMegaCrush']/property[@name='Extends']"/>
+
+<append xpath="//item[@name='drinkCanMegaCrush']">
+	<property name="Tags" value="drinks,foodSkill"/>
+	<property name="DisplayType" value="waterMegaCrush"/>
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<!-- <property name="Weight" value="10"/> -->
+	<property name="Stacknumber" value="10"/> <!-- STK drink -->
+	<property name="EconomicValue" value="240"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Sound_start" value="canneddrink"/>
+	</property>	
+</append>
+
+<remove xpath="//item[@name='drugSteroids']/property[@name='Extends']"/>
+
+<append xpath="//item[@name='drugSteroids']">
+	<property name="DisplayType" value="drugSteroids"/>
+	<property name="HoldType" value="16"/>
+	<property name="Meshfile" value="@:Other/Items/Health/painkillersPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="Stacknumber" value="10"/> <!-- STK loot -->
+	<property name="UnlockedBy" value="craftingMedical"/><!-- perkPhysician, -->
+	<property name="Group" value="Science,Medical,TCMedical"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Sound_start" value="injector"/>
+		<requirement name="NotHasBuff" buff="buffDrugPainkillers"/>
+	</property>
+</append>
+
+</Sap>
