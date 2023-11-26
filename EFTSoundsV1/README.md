@@ -14,7 +14,7 @@ Release (v1)
 - Added quest fail/accept/subtask complete/complete sounds
 - Replaced password fail sound
 
-Alpha (dev build) (unreleased)
+Alpha (unreleased)
 - Added bandage, first aid kit, injector (steroids), painkiller, splint sounds
 - Added eating/drinking sounds to each food/drink item
 - Player death sounds have been replaced (doesn't work in SP?), death screen sound was also replaced
