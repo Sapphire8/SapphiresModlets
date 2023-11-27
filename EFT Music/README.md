@@ -7,7 +7,7 @@ How to use:
 
 - Download the mod linked above
 - Replace MenuMusic.unity3d file with the same file from any of these folders (you can listen to them in section below)
-- In case you don't know how to download the file: go to any of these folders, click MenuMusic.unity3d and there should be an upside down triangle, click it and it should say "download raw".
+- In case you don't know how to download the file: go to any of these folders, click MenuMusic.unity3d and there should be a download button.
 - Launch the game and enjoy!
 ----------------
 Track list (in order):
